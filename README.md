@@ -6,12 +6,12 @@
 
 3. Run npm install
 
-'''
-\$ npm install
-'''
+```
+$ npm install
+```
 
 4. Change remote origin
 
-'''
+```
 git remote set-url origin https://hostname/USERNAME/REPOSITORY.git
-'''
+```
