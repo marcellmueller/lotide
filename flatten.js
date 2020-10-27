@@ -28,6 +28,7 @@ const assertArraysEqual = (firstArray, secondArray) => {
       );
 };
 
+//function to 'flatten' an array with arrays in it.
 const flatten = (array) => {
   const newArray = [];
   for (const element of array) {
