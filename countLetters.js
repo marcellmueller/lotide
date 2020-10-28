@@ -18,3 +18,5 @@ const countLetters = (string) => {
 };
 assertEqual(countLetters('Marcel')['l'], 1);
 assertEqual(countLetters('Lighthouse Labs')['L'], 2);
+
+countLetters;
