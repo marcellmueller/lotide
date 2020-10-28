@@ -16,7 +16,6 @@ const countOnly = (allItems, itemsToCount) => {
       }
     }
   }
-
   return results;
 };
 
