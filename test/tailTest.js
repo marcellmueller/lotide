@@ -11,4 +11,9 @@ describe('#tail', () => {
   it('returns [2, 3] for [1, 2, 3]', () => {
     assert.deepEqual(tail([1, 2, 3]), [2, 3]);
   });
+  it('original array is not modified', () => {
+    const arr = ['Hi', 'Lighthouse', 'Labs'];
+    tail(arr);
+    assert.deepEqual(arr.length, 3);
+  });
 });

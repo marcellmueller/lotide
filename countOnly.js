@@ -1,3 +1,5 @@
+//ake in a collection of items and return counts for a specific subset of those items
+
 const countOnly = (allItems, itemsToCount) => {
   const results = {};
 

@@ -1,3 +1,5 @@
+//take in a string and then return a count of each of the letters in that string
+
 const countLetters = (string) => {
   const results = {};
 

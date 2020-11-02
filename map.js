@@ -1,3 +1,5 @@
+//The map function will return a new array based on the results of the callback function.
+
 const map = (array, callback) => {
   const results = [];
   for (const each of array) {

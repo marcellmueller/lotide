@@ -1,6 +1,6 @@
 {
-  "name": "stretch-project-1",
-  "version": "0.0.0",
+  "name": "@marcelmueller/lotide",
+  "version": "1.0.0",
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^3.19.0",
@@ -14,7 +14,19 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "Marcel Mueller",
   "license": "ISC",
-  "description": ""
+  "description": "Lotide - a simpler alternative to lodash",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcellmueller/lotide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcellmueller/lotide/issues"
+  },
+  "homepage": "https://github.com/marcellmueller/lotide#readme"
 }

@@ -1,3 +1,5 @@
+//Returns the middle value of an array. If array is even, returns the middle two.
+
 const oddArray = (array) => {
   const index = Math.round(array.length / 2);
   return index;

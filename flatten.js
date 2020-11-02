@@ -1,4 +1,4 @@
-//function to 'flatten' an array with arrays in it.
+//'Flattens' nested array elements into a single array
 const flatten = (array) => {
   array = array.toString();
   array = array.split(',');
