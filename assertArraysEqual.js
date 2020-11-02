@@ -1,22 +1,4 @@
-//function to compare two equal length arrays
-const compareArrays = (firstArray, secondArray) => {
-  for (let i = 0; i < firstArray.length; i++) {
-    if (firstArray[i] !== secondArray[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-//first checks if arrays are the same length then
-//calls compareArrays funtion if true
-const eqArrays = (firstArray, secondArray) => {
-  if (firstArray.length === secondArray.length) {
-    return compareArrays(firstArray, secondArray);
-  } else {
-    return false;
-  }
-};
+const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = (firstArray, secondArray) => {
   eqArrays(firstArray, secondArray)
@@ -28,5 +10,4 @@ const assertArraysEqual = (firstArray, secondArray) => {
       );
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [3, 2, 1]);
+module.exports = assertArraysEqual;

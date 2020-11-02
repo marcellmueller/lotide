@@ -1,33 +1,3 @@
-//function to compare two equal length arrays
-const compareArrays = (firstArray, secondArray) => {
-  for (let i = 0; i < firstArray.length; i++) {
-    if (firstArray[i] !== secondArray[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-//first checks if arrays are the same length then
-//calls compareArrays funtion if true
-const eqArrays = (firstArray, secondArray) => {
-  if (firstArray.length === secondArray.length) {
-    return compareArrays(firstArray, secondArray);
-  } else {
-    return false;
-  }
-};
-
-const assertArraysEqual = (firstArray, secondArray) => {
-  eqArrays(firstArray, secondArray)
-    ? console.log(
-        `✅✅✅ Assertion Passed: ${firstArray} and ${secondArray} are equal!`
-      )
-    : console.log(
-        `🛑🛑🛑 Assertion Failed: ${firstArray} does not equal ${secondArray}`
-      );
-};
-
 const oddArray = (array) => {
   const index = Math.round(array.length / 2);
   return index;
@@ -57,6 +27,4 @@ const middle = (array) => {
   return middleArray;
 };
 
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
+module.exports = middle;
