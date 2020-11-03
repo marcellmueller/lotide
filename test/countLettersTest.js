@@ -1,5 +1,11 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const countLetters = require('../countLetters');
 
-assertEqual(countLetters('Marcel')['l'], 1);
-assertEqual(countLetters('Lighthouse Labs')['L'], 2);
+describe('#countLEtters', () => {
+  it('returns 1 for [1, 2, 3]', () => {
+    assert.strictEqual(countLetters('Marcel', ['l']), 1);
+  });
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(countLetters('Lighthouse Labs', ['L']), 2);
+  });
+});

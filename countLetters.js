@@ -1,6 +1,6 @@
 //take in a string and then return a count of each of the letters in that string
 
-const countLetters = (string) => {
+const countLetters = (string, letter) => {
   const results = {};
 
   for (const letter of string) {
@@ -10,7 +10,8 @@ const countLetters = (string) => {
       results[letter] = 1;
     }
   }
-  return results;
+
+  return results[letter];
 };
 
 module.exports = countLetters;
