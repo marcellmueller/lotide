@@ -1,14 +1,14 @@
-const eqArrays = require('../eqArrays');
+const eqArraysRecursive = require('../eqArraysRecursive');
 const assert = require('chai').assert;
 
 describe('#eqArrays', () => {
   it('returns [[2, 3], [4]] === [[2, 3], [4]]', () => {
-    assert.strictEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), false);
+    assert.strictEqual(eqArraysRecursive([[2, 3], [4]], [[2, 3], [4]]), true);
   });
 
   it('returns false', () => {
     assert.strictEqual(
-      eqArrays(
+      eqArraysRecursive(
         [[2, 3], [4]],
         [
           [2, 3],
